@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow: hidden;
+      }
+      section span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    </style>
+    <title>Result</title>
+  </head>
+  <body>
+    <h1>Search Results</h1>
+    <h3>Found {{resultsNumber}} results for: {{searchingBy}}</h3>
+    <a href="/save?word={{searchingBy}}">Save to CSV</a>
+    <section>
+      <h4>name</h4>
+      <h4>company</h4>
+      <h4>location</h4>
+      <h4>link</h4>
+      {% for job in jobs %}
+      <span>{{job.name}}</span>
+      <span>{{job.company}}</span>
+      <span>{{job.location}}</span>
+      <a href="{{job.link}}" target="_blank">Apply</a>
+      {% endfor %}
+    </section>
+  </body>
+</html>
