@@ -8,4 +8,13 @@ Web Crawling with python
   * flask : 추출된 데이터를 간단한 웹페이지에 출력하기 위해 사용
   * csv : csv파일로 저장하기 위해 사용
 * Image
-![login](https://github.com/seungminKim1/trashCan/blob/trashCan/login.PNG)
+ ![web](https://github.com/seungminKim1/crawling_py/blob/master/images/Job_main.PNG)
+  잡코리아 홈페이지에서 python을 검색한 결과
+  
+ ![search](https://github.com/seungminKim1/crawling_py/blob/master/images/insert_python.PNG)
+ 
+  프로젝트 메인에서 python검색
+ ![result](https://github.com/seungminKim1/crawling_py/blob/master/images/result.PNG)
+  검색결과 및 csv 저장 
+ ![web](https://github.com/seungminKim1/crawling_py/blob/master/images/csv.PNG)
+  csv파일로 저장된 결과물
